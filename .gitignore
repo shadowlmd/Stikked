@@ -3,3 +3,4 @@ htdocs/static/asset/*
 htdocs/stikked.db
 htdocs/application/config/stikked.php
 nbproject
+htdocs/.user.ini
