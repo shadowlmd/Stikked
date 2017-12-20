@@ -262,7 +262,7 @@ class CI_URI {
 		}
 		elseif (strncmp($uri, '/', 1) === 0)
 		{
-			$uri = explode('?', $uri, 2);
+			$uri = preg_split('/[?&]/', $uri, 2);
 			$_SERVER['QUERY_STRING'] = isset($uri[1]) ? $uri[1] : '';
 			$uri = $uri[0];
 		}
