@@ -71,7 +71,7 @@ class Api extends Main
                 }
             }
 
-            if (!$this->input->post('expire')) {
+            if (!$this->input->post('expire') && $this->input->post('expire') !== '0') {
                 $_POST['expire'] = config_item('default_expiration');
             }
 
